@@ -1,0 +1,6 @@
+.env
+.DS_Store
+*.log
+test-stage3.sh
+test-failover.sh
+watcher-docker.py
