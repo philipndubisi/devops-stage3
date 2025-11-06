@@ -137,18 +137,6 @@ Chaos Testing Workflow
 6. Recovery: Observe automatic return to Blue
 7. Verify: Confirm recovery alert in Slack
 
-Project Structure
-.
-├── docker-compose.yml          # Service orchestration
-├── Dockerfile.watcher          # Watcher container definition
-├── nginx.conf.template         # Nginx configuration template
-├── watcher.py                  # Python log monitoring script
-├── requirements.txt            # Python dependencies
-├── .env.example                # Environment template
-├── .env                        # Your actual config (git-ignored)
-├── test-stage3.sh             # Automated testing script
-├── runbook.md                  # Operator response guide
-└── README.md                   # This file
 
 Failover Performance
 - Detection time: < 5 seconds
