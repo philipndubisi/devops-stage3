@@ -10,30 +10,6 @@ This project implements a Blue/Green deployment strategy with automated failover
 - Automated recovery detection
 - Comprehensive observability through structured Nginx logs
 
- Architecture
-
-┌─────────────┐
-│   Client    │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────────┐
-│  Nginx (8080)   │ ◄──── Access Logs (structured)
-│  Load Balancer  │
-└────┬────────┬───┘
-     │        │
-     ▼        ▼
-┌─────────┐ ┌─────────┐
-│  Blue   │ │  Green  │
-│ (8081)  │ │ (8082)  │
-│ Primary │ │ Backup  │
-└─────────┘ └─────────┘
-     │
-     ▼
-┌──────────────────┐     ┌────────────┐
-│  Alert Watcher   │────▶│   Slack    │
-│  (Python)        │     │  Webhook   │
-└──────────────────┘     └────────────┘
 
 Prerequisites
 
